@@ -3,7 +3,13 @@ import Gallery from "./components/Gallery";
 export default function Home() {
   return (
     <>
-      <h1>Photo Gallery</h1>
+      <header>
+        <nav className="border-gray-200 px-4 lg:px-6 py-2.5 bg-rose-400 rounded-2xl">
+          <div className="text-center text-4xl font-semibold whitespace-nowrap text-rose-900 ">
+            Photo Gallery
+          </div>
+        </nav>
+      </header>
       <Gallery />
     </>
   )

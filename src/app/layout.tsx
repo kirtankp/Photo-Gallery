@@ -1,5 +1,8 @@
+import Navbar from './components/Navbar'
 import './globals.css'
 import type { Metadata } from 'next'
+
+export const revalidate = 3600
 
 export const metadata: Metadata = {
   title: 'Photo Gallery',
@@ -13,7 +16,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='bg-rose-100'>
+      <body className='bg-green-100'>
+        <Navbar />
         <main className='max-w-6xl mx-auto'>
           {children}
         </main>
